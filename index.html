@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Estádio à Arena Digital – Viabilidade Técnica e Econômica para o Almeidão e Amigão</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header-gradient {
+            background: linear-gradient(135deg, #005CA9 0%, #0077B6 100%);
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        
+        .section-title {
+            border-left: 4px solid #0077B6;
+            padding-left: 1rem;
+        }
+        
+        .benefit-card {
+            border-left: 3px solid #0077B6;
+            background-color: #f8f9fa;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .chart-container {
+            height: 300px;
+            margin: 2rem 0;
+        }
+        
+        .case-study {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .case-study:last-child {
+            border-bottom: none;
+        }
+        
+        .footer {
+            background-color: #1e3a5f;
+            color: white;
+        }
+        
+        .btn-primary {
+            background-color: #0077B6;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #005CA9;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        th {
+            background-color: #f1f5f9;
+            font-weight: 600;
+        }
+        
+        tr:hover {
+            background-color: #f8fafc;
+        }
+        
+        .stadium-image {
+            max-height: 300px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .technology-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #e5e7eb;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+        }
+        
+        .accent-border {
+            border-left: 4px solid #0077B6;
+            padding-left: 1rem;
+        }
+        
+        .highlight-box {
+            background-color: #f0f9ff;
+            border-left: 4px solid #0ea5e9;
+        }
+        
+        .quote {
+            font-style: italic;
+            border-left: 4px solid #94a3b8;
+            padding-left: 1rem;
+            color: #475569;
+        }
+        
+        /* Para impressão em PDF */
+        @media print {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .page-break {
+                display: none;
+            }
+            
+            a {
+                text-decoration: none;
+                color: #0077B6;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="page-container">
+        <!-- Cabeçalho -->
+        <header class="header-gradient text-white p-6 rounded-b-lg shadow-lg mb-8">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-3xl font-bold mb-2">Do Estádio à Arena Digital</h1>
+                    <h2 class="text-xl opacity-90">Viabilidade Técnica e Econômica para o Almeidão e Amigão</h2>
+                </div>
+                <div class="text-right">
+                    <h3 class="text-xl font-semibold">RBIM Consultoria</h3>
+                    <p class="text-sm opacity-80">Especialistas em BIM e Digital Twins</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sumário Executivo -->
+        <section class="section bg-white shadow-md">
+            <h2 class="text-2xl font-semibold mb-4 section-title">Sumário Executivo</h2>
+            <p class="mb-4">
+                Este relatório apresenta uma análise técnica e econômica sobre a transformação dos estádios Almeidão (João Pessoa-PB) e 
+                Amigão (Campina Grande-PB) em modernas arenas multiuso, potencializadas por tecnologias digitais para maximizar 
+                sua utilização e rentabilidade, transformando estas infraestruturas esportivas em verdadeiros centros de entretenimento e negócios.
+            </p>
+            <p>
+                A proposta integra escaneamento 3D de alta precisão com a tecnologia Matterport Pro3, criação de gêmeos 
+                digitais (Digital Twins) e implementação de painéis interativos com dados em tempo real, resultando em uma 
+                infraestrutura capaz de gerar novas receitas e impactos socioeconômicos positivos para o Estado da Paraíba.
+            </p>
+        </section>
+
+        <!-- Introdução à RBIM -->
+        <section class="section bg-white shadow-md">
+            <h2 class="text-2xl font-semibold mb-4 section-title">RBIM Consultoria: Referência Nacional em BIM e Digital Twins</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-2/3 pr-0 md:pr-6">
+                    <p class="mb-4">
+                        A RBIM Consultoria consolidou-se como referência nacional na implementação de tecnologias BIM (Building Information Modeling) 
+                        e no desenvolvimento de Digital Twins para infraestruturas públicas e privadas. Nossa equipe multidisciplinar, 
+                        composta por engenheiros, arquitetos e especialistas em tecnologia da informação, possui certificações Autodesk e 
+                        vasta experiência em projetos de transformação digital.
+                    </p>
+                    <p class="mb-4">
+                        Com projetos reconhecidos em todo o país, a RBIM tem atuado em parceria com governos estaduais e municipais na 
+                        modernização de infraestruturas públicas através da aplicação de tecnologias avançadas. Nosso compromisso é 
+                        criar soluções que maximizem o retorno sobre investimento, com foco na sustentabilidade financeira e ambiental.
+                    </p>
+                    <p>
+                        A participação da RBIM em projetos estratégicos como membro do grupo técnico BIM do Ministério da Economia 
+                        e a experiência anterior como gerenciadora BIM para o Governo da Paraíba credenciam nossa empresa para 
+                        propor soluções inovadoras para os principais equipamentos esportivos do estado.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/3 mt-4 md:mt-0">
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h3 class="font-bold text-lg mb-2">Expertise RBIM</h3>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Certificações Autodesk</li>
+                            <li>Docentes em BIM (IPOG/SENAI)</li>
+                            <li>Membro Técnico BIM no Ministério da Economia</li>
+                            <li>Experiência em Gestão BIM no Governo da PB</li>
+                            <li>Desenvolvimento de Gêmeos Digitais</li>
+                            <li>Integração com Inteligência Artificial</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estádios Atuais -->
+        <section class="section bg-white shadow-md">
+            <h2 class="text-2xl font-semibold mb-4 section-title">Os Estádios Atuais: Almeidão e Amigão</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <div class="p-4 bg-blue-700 text-white">
+                        <h3 class="text-xl font-semibold">Estádio José Américo de Almeida Filho (Almeidão)</h3>
+                        <p class="text-sm">João Pessoa - PB</p>
+                    </div>
+                    <div class="p-4">
+                        <ul class="space-y-2">
+                            <li><strong>Capacidade:</strong> 19.000 espectadores</li>
+                            <li><strong>Inauguração:</strong> 9 de março de 1975</li>
+                            <li><strong>Localização:</strong> Cristo Redentor, João Pessoa</li>
+                            <li><strong>Características:</strong> Gramado natural (105 x 68m)</li>
+                            <li><strong>Utilização atual:</strong> Majoritariamente partidas de futebol</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <div class="p-4 bg-blue-700 text-white">
+                        <h3 class="text-xl font-semibold">Estádio Governador Ernani Sátyro (Amigão)</h3>
+                        <p class="text-sm">Campina Grande - PB</p>
+                    </div>
+                    <div class="p-4">
+                        <ul class="space-y-2">
+                            <li><strong>Capacidade:</strong> Principal estádio do interior nordestino</li>
+                            <li><strong>Inauguração:</strong> 8 de março de 1975</li>
+                            <li><strong>Localização:</strong> Sandra Cavalcante, Campina Grande</li>
+                            <li><strong>Utilização atual:</strong> Partidas de futebol e eventos esporádicos</li>
+                            <li><strong>Importância cultural:</strong> Palco do Clássico dos Maiorais (Treze x Campinense)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight-box p-4 rounded-lg">
+                <h3 class="font-semibold text-lg mb-2">Limitações Atuais</h3>
+                <p>
+                    Ambos os estádios, com quase meio século de existência, apresentam infraestrutura limitada para usos além do futebol, 
+                    com baixa taxa de utilização (média de 2-4 eventos por mês), gerando receitas insuficientes para sua manutenção 
+                    adequada e modernização. A ausência de recursos tecnológicos limita o potencial de monetização desses espaços.
+                </p>
+            </div>
+        </section>
+
+        <!-- Processo de Digitalização -->
+        <section class="section bg-white shadow-md">
+            <h2 class="text-2xl font-semibold mb-4 section-title">Processo de Digitalização 3D e Vinculação com Sensores de Dados</h2>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-2">Escaneamento 3D com Matterport Pro3</h3>
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-full md:w-3/4 pr-0 md:pr-6">
+                        <p class="mb-4">
+                            A tecnologia de escaneamento 3D Matterport Pro3 representa a mais avançada solução para digitalização de espaços físicos, 
+                            permitindo a criação de réplicas digitais fotorrealistas dos estádios. Esta câmera LiDAR de alto desempenho captura 
+                            imagens em 4K com precisão milimétrica, tanto em ambientes internos quanto externos, com alcance de até 100 metros.
+                        </p>
+                        <p>
+                            O processo de escaneamento é realizado em etapas estratégicas:
+                        </p>
+                        <ol class="list-decimal pl-6 mt-3 space-y-2">
+                            <li><strong>Mapeamento preliminar</strong> - Definição dos pontos de captura para cobertura completa do estádio</li>
+                            <li><strong>Captura LiDAR</strong> - Escaneamento de alta precisão dos espaços internos e externos</li>
+                            <li><strong>Processamento de dados</strong> - Integração das capturas em um modelo 3D unificado e otimizado</li>
+                            <li><strong>Texturização e detalhamento</strong> - Aplicação de texturas fotorrealistas e metadados</li>
+                            <li><strong>Criação do modelo BIM</strong> - Desenvolvimento do modelo paramétrico com informações técnicas</li>
+                        </ol>
+                    </div>
+                    <div class="w-full md:w-1/4 mt-4 md:mt-0">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2">Especificações Matterport Pro3</h4>
+                            <ul class="text-sm space-y-2">
+                                <li>Resolução de captura: 4K</li>
+                                <li>Alcance: até 100 metros</li>
+                                <li>Tecnologia LiDAR</li>
+                                <li>Precisão de medição: ±1%</li>
+                                <li>Compatibilidade com BIM</li>
+                                <li>Captura interna e externa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-2">Criação do Digital Twin e Integração com Sensores IoT</h3>
+                <p class="mb-4">
+                    O Digital Twin vai muito além de uma simples representação 3D, constituindo uma réplica virtual dinâmica e inteligente 
+                    capaz de refletir em tempo real as condições e o comportamento da estrutura física. Esta tecnologia possibilita:
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div class="p-4 border rounded-lg">
+                        <h4 class="font-semibold mb-2">Virtualização da Infraestrutura</h4>
+                        <ul class="list-disc pl-5 space-y-1 text-sm">
+                            <li>Modelagem de todos os sistemas prediais</li>
+                            <li>Documentação digital completa e acessível</li>
+                            <li>Visualização interativa via dispositivos móveis</li>
+                            <li>Planejamento de espaços e simulação de eventos</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 border rounded-lg">
+                        <h4 class="font-semibold mb-2">Monitoramento em Tempo Real</h4>
+                        <ul class="list-disc pl-5 space-y-1 text-sm">
+                            <li>Sensores de ocupação e fluxo de pessoas</li>
+                            <li>Controle de sistemas (iluminação, HVAC, energia)</li>
+                            <li>Detecção de anomalias e manutenção preditiva</li>
+                            <li>Segurança e gerenciamento de emergências</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3 class="text-xl font-semibold mb-2">Painéis Interativos com Dados em Tempo Real</h3>
+                <p class="mb-3">
+                    O projeto prevê a implementação de painéis interativos (dashboards) acessíveis aos gestores e, em versões 
+                    adaptadas, ao público, fornecendo informações em tempo real sobre:
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="p-3 bg-blue-50 rounded-lg shadow-sm">
+                        <h4 class="font-semibold text-blue-700">Gestão Operacional</h4>
+                        <ul class="text-sm mt-2 space-y-1">
+                            <li>Consumo energético em tempo real</li>
+                            <li>Densidade de ocupação por setor</li>
+                            <li>Status dos sistemas de segurança</li>
+                            <li>Alertas de manutenção preventiva</li>
+                        </ul>
+                    </div>
+                    <div class="p-3 bg-blue-50 rounded-lg shadow-sm">
+                        <h4 class="font-semibold text-blue-700">Experiência do Público</h4>
+                        <ul class="text-sm mt-2 space-y-1">
+                            <li>Mapas de calor de concentração</li>
+                            <li>Tempos de fila em serviços</li>
+                            <li>Navegação e wayfinding interno</li>
+                            <li>Informações contextuais do evento</li>
+                        </ul>
+                    </div>
+                    <div class="p-3 bg-blue-50 rounded-lg shadow-sm">
+                        <h4 class="font-semibold text-blue-700">Análise de Negócios</h4>
+                        <ul class="text-sm mt-2 space-y-1">
+                            <li>Métricas de receita por setor</li>
+                            <li>Análise de comportamento do consumidor</li>
+                            <li>Taxa de ocupação por evento</li>
+                            <li>ROI de áreas comerciais</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote">
+                "A transformação digital de infraestruturas esportivas não é apenas uma tendência, mas uma necessidade estratégica para 
+                maximizar o retorno sobre investimento e garantir sua sustentabilidade econômica a longo prazo."
+            </div>
+        </section>
+
+        <!-- Benefícios para o Estado -->
+        <section class="section bg-white shadow-md">
+            <h2 class="text-2xl font-semibold mb-6 section-title">Benefícios para o Estado da Paraíba</h2>
+            
+            <p class="mb-6">
+                A transformação dos estádios Almeidão e Amigão em arenas multiuso digitalmente integradas proporcionará múltiplos 
+                benefícios para o Estado da Paraíba, impactando positivamente diversos setores da economia e a qualidade de vida da população.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+                <!-- Benefício 1 -->
+                <div class="benefit-card p-4 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-3">
+                        <div class="technology-icon">
+                            <i class="fas fa-dollar-sign text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">Novas Fontes de Receita</h3>
+                    </div>
+                    <p class="text-sm">
+                        Diversificação das fontes de renda através de eventos não esportivos, aluguel de espaços modulares,
+                        naming rights, concessões comerciais e exploração de publicidade digital, reduzindo a dependência de 
+                        recursos públicos para manutenção.
+                    </p>
+                </div>
+                
+                <!-- Benefício 2 -->
+                <div class="benefit-card p-4 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-3">
+                        <div class="technology-icon">
+                            <i class="fas fa-music text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">Eventos Culturais</h3>
+                    </div>
+                    <p class="text-sm">
+                        Ampliação significativa da oferta cultural com shows, espetáculos, festivais e eventos regionais, criando 
+                        novos espaços para manifestações culturais e entretenimento na capital e no interior do estado.
+                    </p>
+                </div>
+                
+                <!-- Benefício 3 -->
+                <div class="benefit-card p-4 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-3">
+                        <div class="technology-icon">
+                            <i class="fas fa-plane-arrival text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">Impulso ao Turismo</h3>
+                    </div>
+                    <p class="text-sm">
+                        Atração de turistas de eventos e negócios, aumentando a taxa de ocupação hoteleira, movimentando o setor 
+                        de alimentação e transporte, e inserindo a Paraíba no circuito de grandes eventos nacionais e internacionais.
+                    </p>
+                </div>
+                
+                <!-- Benefício 4 -->
+                <div class="benefit-card p-4 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-3">
+                        <div class="technology-icon">
+                            <i class="fas fa-building text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">Naming Rights</h3>
+                    </div>
+                    <p class="text-sm">
+                        Valorização da marca dos estádios através de contratos de naming rights com empresas nacionais ou locais, 
+                        gerando receitas anuais significativas como já ocorre em outras arenas brasileiras.
+                    </p>
+                </div>
+                
+                <!-- Benefício 5 -->
+                <div class="benefit-card p-4 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-3">
+                        <div class="technology-icon">
+                            <i class="fas fa-handshake text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">Aluguel Modular</h3>
+                    </div>
+                    <p class="text-sm">
+                        Sistema flexível de aluguel de espaços para eventos corporativos, feiras, congressos, formaturas e celebrações, 
+                        maximizando a utilização da infraestrutura mesmo em dias sem jogos.
+                    </p>
+                </div>
+                
+                <!-- Benefício 6 -->
+                <div class="benefit-card p-4 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-3">
+                        <div class="technology-icon">
+                            <i class="fas fa-briefcase text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">Geração de Empregos</h3>
+                    </div>
+                    <p class="text-sm">
+                        Criação de postos de trabalho diretos e indiretos relacionados à operação das arenas multiuso, 
+                        produção de eventos e cadeia de serviços associados, impulsionando a economia local.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-blue-50 p-5 rounded-lg">
+                <h3 class="text-lg font-semibold mb-3">Impacto Socioeconômico Estimado</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-blue-100">
+                                <th>Indicador</th>
+                                <th>Situação Atual</th>
+                                <th>Projeção Após Transformação</th>
+                                <th>Impacto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Taxa de ocupação anual</td>
+                                <td>15% (jogos de futebol)</td>
+                                <td>60-70% (multiuso)</td>
+                                <td class="text-green-600">+45% a 55%</td>
+                            </tr>
+                            <tr>
+                                <td>Eventos não-esportivos/ano</td>
+                                <td>5-10 eventos</td>
+                                <td>80-120 eventos</td>
+                                <td class="text-green-600">+75 a 110 eventos</td>
+                            </tr>
+                            <tr>
+                                <td>Visitantes anuais</td>
+                                <td>~150.000 pessoas</td>
+                                <td>~500.000 pessoas</td>
+                                <td class="text-green-600">+233%</td>
+                            </tr>
+                            <tr>
+                                <td>Geração de empregos (diretos e indiretos)</td>
+                                <td>~100 postos</td>
+                                <td>~450 postos</td>
+                                <td class="text-green-600">+350%</td>
+                            </tr>
+                            <tr>
+                                <td>Impacto na cadeia turística local</td>
+                                <td>Baixo</td>
+                                <td>Médio-Alto</td>
+                                <td class="text-green-600">Significativo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cases de Sucesso -->
+        <section class="section bg-white shadow-md">
+            <h2 class="text-2xl font-semibold mb-4 section-title">Cases Nacionais e Internacionais de Arenas Multiuso</h2>
+            
+            <p class="mb-6">
+                A transformação de estádios em arenas multiuso já é uma realidade consolidada no Brasil e no exterior, 
+                com resultados financeiros e sociais expressivos que servem de referência para o projeto proposto.
+            </p>
+            
+            <!-- Cases Nacionais -->
+            <h3 class="text-xl font-semibold mb-3">Cases Nacionais</h3>
+            
+            <div class="space-y-6 mb-8">
+                <!-- Allianz Parque -->
+                <div class="case-study p-4">
+                    <h4 class="font-semibold text-lg">Allianz Parque (São Paulo)</h4>
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full md:w-2/3">
+                            <p class="mb-3">
+                                Arena multiuso que se tornou referência nacional em receitas fora do futebol, 
+                                com faturamento histórico significativo.
+                            </p>
+                            <ul class="list-disc pl-6 mb-3 text-sm">
+                                <li>Receita anual: aproximadamente R$ 200 milhões (pré-pandemia)</li>
+                                <li>Média de 3 a 4 shows/grandes eventos por mês</li>
+                                <li>Sistema de assentos retráteis para adaptar o campo para shows</li>
+                                <li>Contrato de naming rights avaliado em R$ 300 milhões (20 anos)</li>
+                                <li>Modelo de negócio com repasse de percentuais de receita ao clube</li>
+                            </ul>
+                        </div>
+                        <div class="w-full md:w-1/3">
+                            <div class="bg-gray-100 p-3 rounded-lg">
+                                <h5 class="font-semibold mb-2">Principais Inovações</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>Sistema modular de arquibancadas</li>
+                                    <li>Acústica especial para shows</li>
+                                    <li>Infraestrutura de TI avançada</li>
+                                    <li>Modelo de gestão compartilhada</li>
+                                    <li>Espaços corporativos premium</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Arena MRV -->
+                <div class="case-study p-4">
+                    <h4 class="font-semibold text-lg">Arena MRV (Belo Horizonte)</h4>
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full md:w-2/3">
+                            <p class="mb-3">
+                                Um dos mais recentes projetos de arenas multiuso no Brasil, inaugurada em 2023, já demonstrando 
+                                resultados financeiros expressivos em seu primeiro ano completo de operação.
+                            </p>
+                            <ul class="list-disc pl-6 mb-3 text-sm">
+                                <li>Receita bruta de R$ 88,1 milhões em 2024</li>
+                                <li>Receita líquida média de R$ 2,6 milhões por jogo</li>
+                                <li>Taxa de ocupação média de 35.237 torcedores por evento</li>
+                                <li>Estrutura completa para shows e eventos corporativos</li>
+                                <li>Tecnologia avançada integrada à experiência do público</li>
+                            </ul>
+                        </div>
+                        <div class="w-full md:w-1/3">
+                            <div class="bg-gray-100 p-3 rounded-lg">
+                                <h5 class="font-semibold mb-2">Diferenciais Tecnológicos</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>Conectividade 5G em todos os setores</li>
+                                    <li>Painéis solares integrados</li>
+                                    <li>App dedicado para experiência do torcedor</li>
+                                    <li>Sistema de gestão integrada</li>
+                                    <li>Digital Twin para manutenção avançada</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cases Internacionais -->
+            <h3 class="text-xl font-semibold mb-3">Referências Internacionais</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="p-4 border rounded-lg">
+                    <h4 class="font-semibold">Mercedes-Benz Stadium (Atlanta, EUA)</h4>
+                    <p class="text-sm mb-2">
+                        Infraestrutura de ponta com teto retrátil e tecnologia de visualização 360°, utilizada para eventos 
+                        esportivos, shows e convenções com mais de 200 eventos anuais.
+                    </p>
+                    <div class="text-xs bg-gray-50 p-2 rounded">
+                        <span class="font-semibold">Destaque:</span> Integração total com IoT e experiência digital do visitante 
+                        através de aplicativo próprio para wayfinding e serviços.
+                    </div>
+                </div>
+                
+                <div class="p-4 border rounded-lg">
+                    <h4 class="font-semibold">Tottenham Hotspur Stadium (Londres, UK)</h4>
+                    <p class="text-sm mb-2">
+                        Campo retrátil que revela uma superfície para NFL e eventos, com sistema multiuso que permite 
+                        transição completa em apenas 25 minutos.
+                    </p>
+                    <div class="text-xs bg-gray-50 p-2 rounded">
+                        <span class="font-semibold">Destaque:</span> Tecnologia de ponta para operações e experiência do cliente, 
+                        incluindo sistema cashless completo e conectividade premium.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                <h4 class="font-semibold mb-2">Lições Aprendidas dos Cases de Sucesso</h4>
+                <ul class="list-disc pl-6">
+                    <li>As arenas mais bem-sucedidas são projetadas desde o início como espaços multiuso</li>
+                    <li>A tecnologia é fundamental para maximizar receitas e melhorar a experiência do usuário</li>
+                    <li>Parcerias estratégicas com patrocinadores e empresas de entretenimento são essenciais</li>
+                    <li>O digital twin facilita a gestão operacional e a manutenção da infraestrutura</li>
+                    <li>A flexibilidade de configuração dos espaços amplia as possibilidades de uso</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Simulação de Possíveis Usos -->
+        <section class="section bg-white shadow-md">
+            <h2 class="text-2xl font-semibold mb-4 section-title">Simulação de Possíveis Usos e Potencial Econômico</h2>
+            
+            <p class="mb-4">
+                Com base na análise de arenas multiuso semelhantes e adaptando à realidade local, projetamos cenários 
+                de utilização que demonstram o potencial econômico da transformação dos estádios Almeidão e Amigão.
+            </p>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">Projeção de Eventos Mensais (por estádio)</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-blue-100">
+                                <th>Tipo de Evento</th>
+                                <th>Quantidade Mensal</th>
+                                <th>Receita Média por Evento</th>
+                                <th>Receita Mensal Estimada</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Partidas de Futebol</td>
+                                <td>4-6 jogos</td>
+                                <td>R$ 40.000</td>
+                                <td>R$ 160.000 - 240.000</td>
+                            </tr>
+                            <tr>
+                                <td>Shows e Eventos Musicais</td>
+                                <td>2-3 eventos</td>
+                                <td>R$ 60.000</td>
+                                <td>R$ 120.000 - 180.000</td>
+                            </tr>
+                            <tr>
+                                <td>Feiras e Exposições</td>
+                                <td>1-2 eventos</td>
+                                <td>R$ 30.000</td>
+                                <td>R$ 30.000 - 60.000</td>
+                            </tr>
+                            <tr>
+                                <td>Eventos Corporativos</td>
+                                <td>3-4 eventos</td>
+                                <td>R$ 15.000</td>
+                                <td>R$ 45.000 - 60.000</td>
+                            </tr>
+                            <tr>
+                                <td>Eventos Sociais/Formaturas</td>
+                                <td>1-2 eventos</td>
+                                <td>R$ 25.000</td>
+                                <td>R$ 25.000 - 50.000</td>
+                            </tr>
+                            <tr class="bg-blue-50 font-semibold">
+                                <td>Total (apenas eventos não-futebolísticos)</td>
+                                <td>7-11 eventos</td>
+                                <td>-</td>
+                                <td>R$ 220.000 - 350.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">Fontes de Receita Adicionais</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 border rounded-lg">
+                        <h4 class="font-semibold">Naming Rights</h4>
+                        <p class="text-sm mb-2">
+                            Contratos de patrocínio para nomear a arena completa ou setores específicos.
+                        </p>
+                        <div class="text-xs bg-gray-50 p-2 rounded">
+                            <span class="font-semibold">Estimativa:</span> R$ 2-4 milhões anuais (para cada arena), 
+                            dependendo do alcance da marca e dos benefícios incluídos.
+                        </div>
+                    </div>
+                    
+                    <div class="p-4 border rounded-lg">
+                        <h4 class="font-semibold">Concessões Comerciais</h4>
+                        <p class="text-sm mb-2">
+                            Espaços para alimentação, bebidas e varejo dentro da arena.
+                        </p>
+                        <div class="text-xs bg-gray-50 p-2 rounded">
+                            <span class="font-semibold">Estimativa:</span> R$ 50-80 mil mensais em receitas de aluguel 
+                            e percentuais sobre vendas.
+                        </div>
+                    </div>
+                    
+                    <div class="p-4 border rounded-lg">
+                        <h4 class="font-semibold">Publicidade Digital</h4>
+                        <p class="text-sm mb-2">
+                            Painéis de LED, espaços digitais interativos e oportunidades de publicidade virtual.
+                        </p>
+                        <div class="text-xs bg-gray-50 p-2 rounded">
+                            <span class="font-semibold">Estimativa:</span> R$ 40-70 mil mensais em contratos de exibição 
+                            publicitária durante eventos.
+                        </div>
+                    </div>
+                    
+                    <div class="p-4 border rounded-lg">
+                        <h4 class="font-semibold">Visitas Guiadas e Experiências</h4>
+                        <p class="text-sm mb-2">
+                            Tours pela arena, museu, experiências VR/AR e espaços interativos educacionais.
+                        </p>
+                        <div class="text-xs bg-gray-50 p-2 rounded">
+                            <span class="font-semibold">Estimativa:</span> R$ 20-30 mil mensais, considerando 
+                            ticket médio de R$ 25-50 por visitante.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-blue-50 p-5 rounded-lg">
+                <h3 class="text-lg font-semibold mb-3">Projeção Financeira Anual (por estádio)</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-blue-100">
+                                <th>Fonte de Receita</th>
+                                <th>Estimativa Anual</th>
+                                <th>Participação (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Eventos não-futebolísticos</td>
+                                <td>R$ 2.640.000 - 4.200.000</td>
+                                <td>40-45%</td>
+                            </tr>
+                            <tr>
+                                <td>Partidas de futebol</td>
+                                <td>R$ 1.920.000 - 2.880.000</td>
+                                <td>30-35%</td>
+                            </tr>
+                            <tr>
+                                <td>Naming rights</td>
+                                <td>R$ 2.000.000 - 4.000.000</td>
+                                <td>20-25%</td>
+                            </tr>
+                            <tr>
+                                <td>Concessões comerciais</td>
+                                <td>R$ 600.000 - 960.000</td>
+                                <td>5-8%</td>
+                            </tr>
+                            <tr>
+                                <td>Publicidade digital</td>
+                                <td>R$ 480.000 - 840.000</td>
+                                <td>5-7%</td>
+                            </tr>
+                            <tr>
+                                <td>Tours e experiências</td>
+                                <td>R$ 240.000 - 360.000</td>
+                                <td>2-3%</td>
+                            </tr>
+                            <tr class="bg-blue-200 font-semibold">
+                                <td>Total</td>
+                                <td>R$ 7.880.000 - 13.240.000</td>
+                                <td>100%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <p class="mt-3 text-sm">
+                    <strong>Observação:</strong> As projeções consideram um período de maturação de 3 anos para atingir o cenário otimista, 
+                    com uma curva de adoção gradual após a implantação completa das tecnologias digitais e adaptações físicas.
+                </p>
+            </div>
+        </section>
+
+        <!-- Encerramento -->
+        <section class="section bg-white shadow-md">
+            <h2 class="text-2xl font-semibold mb-4 section-title">Proposta de Estudo de Viabilidade Formal</h2>
+            
+            <p class="mb-4">
+                Para avançar com o projeto de transformação dos estádios Almeidão e Amigão em arenas multiuso digitalmente integradas, 
+                a RBIM Consultoria propõe a elaboração de um estudo de viabilidade técnica, econômica e operacional detalhado, 
+                em parceria com as secretarias estaduais relevantes.
+            </p>
+            
+            <h3 class="text-xl font-semibold mb-3">Etapas do Estudo Proposto</h3>
+            
+            <div class="mb-6">
+                <ol class="space-y-4">
+                    <li class="flex">
+                        <span class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-3">1</span>
+                        <div>
+                            <h4 class="font-semibold">Diagnóstico Detalhado da Infraestrutura Atual</h4>
+                            <p class="text-sm">
+                                Levantamento completo das condições estruturais, sistemas prediais e 
+                                limitações técnicas de cada estádio, com escaneamento 3D preliminar.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <span class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-3">2</span>
+                        <div>
+                            <h4 class="font-semibold">Análise de Mercado Regional</h4>
+                            <p class="text-sm">
+                                Estudo do potencial de demanda para diferentes tipos de eventos nas regiões 
+                                de João Pessoa e Campina Grande, incluindo pesquisas com produtores de eventos e público.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <span class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-3">3</span>
+                        <div>
+                            <h4 class="font-semibold">Projeto Conceitual e Requisitos Técnicos</h4>
+                            <p class="text-sm">
+                                Desenvolvimento de diretrizes arquitetônicas e tecnológicas necessárias para 
+                                adaptação dos estádios ao conceito multiuso, incluindo especificações BIM.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <span class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-3">4</span>
+                        <div>
+                            <h4 class="font-semibold">Modelagem Econômico-Financeira</h4>
+                            <p class="text-sm">
+                                Detalhamento dos investimentos necessários, fluxo de caixa projetado, 
+                                análise de retorno sobre investimento e estratégias para captação de recursos.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <span class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-3">5</span>
+                        <div>
+                            <h4 class="font-semibold">Proposta de Modelo de Gestão</h4>
+                            <p class="text-sm">
+                                Recomendação do modelo operacional ideal (gestão direta, PPP, concessão ou 
+                                modelo híbrido) para maximizar eficiência e resultados.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            
+            <h3 class="text-xl font-semibold mb-3">Integração com Secretarias Estaduais</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div class="p-4 border-l-4 border-blue-600 bg-gray-50">
+                    <h4 class="font-semibold">Secretaria de Esporte e Lazer</h4>
+                    <ul class="text-sm mt-2 space-y-1">
+                        <li>Alinhamento com políticas esportivas</li>
+                        <li>Coordenação com federações e clubes</li>
+                        <li>Integração com calendário esportivo</li>
+                    </ul>
+                </div>
+                <div class="p-4 border-l-4 border-blue-600 bg-gray-50">
+                    <h4 class="font-semibold">Secretaria de Turismo e Desenvolvimento Econômico</h4>
+                    <ul class="text-sm mt-2 space-y-1">
+                        <li>Estratégias de atração de eventos</li>
+                        <li>Integração com roteiros turísticos</li>
+                        <li>Captação de investidores estratégicos</li>
+                    </ul>
+                </div>
+                <div class="p-4 border-l-4 border-blue-600 bg-gray-50">
+                    <h4 class="font-semibold">Secretaria de Cultura</h4>
+                    <ul class="text-sm mt-2 space-y-1">
+                        <li>Alinhamento com agenda cultural</li>
+                        <li>Integração com artistas locais</li>
+                        <li>Promoção da identidade cultural paraibana</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="p-5 bg-blue-600 text-white rounded-lg mb-3">
+                <h3 class="font-bold text-xl mb-2">Próximos Passos</h3>
+                <p class="mb-4">
+                    A RBIM Consultoria está pronta para iniciar imediatamente o estudo de viabilidade proposto, 
+                    contando com equipe multidisciplinar e tecnologias de ponta para entregar uma visão completa 
+                    do potencial transformador deste projeto para a Paraíba.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                    <div class="bg-white text-blue-800 py-2 px-4 rounded-md font-semibold text-center">
+                        Prazo para estudo completo: 90 dias
+                    </div>
+                    <div class="bg-white text-blue-800 py-2 px-4 rounded-md font-semibold text-center">
+                        Início das adaptações: 2025/2026
+                    </div>
+                    <div class="bg-white text-blue-800 py-2 px-4 rounded-md font-semibold text-center">
+                        ROI estimado: 3-5 anos
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote text-center p-6">
+                "Transformar o Almeidão e o Amigão em arenas digitais multiuso não é apenas um projeto de infraestrutura, 
+                mas um catalisador para o desenvolvimento econômico, cultural e esportivo da Paraíba, posicionando o 
+                estado na vanguarda da modernização de equipamentos esportivos no Nordeste brasileiro."
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="footer p-6 rounded-t-lg mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <h3 class="text-xl font-semibold mb-3">RBIM Consultoria</h3>
+                    <p class="text-sm opacity-80">
+                        Especialistas em Building Information Modeling<br>
+                        Digital Twins e Transformação Digital
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Contato</h3>
+                    <p class="text-sm opacity-80">
+                        <i class="fas fa-envelope mr-2"></i> contato@rbimconsultoria.com.br<br>
+                        <i class="fas fa-phone mr-2"></i> (83) 3264-5765<br>
+                        <i class="fas fa-map-marker-alt mr-2"></i> João Pessoa - PB
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Acompanhe</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-gray-300">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-gray-300">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-gray-300">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-500 mt-6 pt-4 text-center text-sm opacity-70">
+                <p>&copy; 2025 RBIM Consultoria - Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
